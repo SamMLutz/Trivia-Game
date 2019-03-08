@@ -17,50 +17,57 @@
     <header>
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <h1 class="display-4">(original) Football Trivia!</h1>
-                <p class="lead">A timed trivia game to test your knowledge of the beautiful game!</p>
+                
+                    <h1 class="display-4">(original) Football Trivia!</h1>
+                    <p class="lead">A timed trivia game to test your knowledge of the beautiful game!</p>
+                
+                <div>
+                    <button id="start-button">Start</button>
+                </div>
+                <div class="finish-container">
+                    <button class="finish">Finish</button>
+                </div>
             </div>
-            <div>
-                <button id="start-button">Start</button>
-            </div>
+            
         </div>
     </header>
-    <main class="container">
+    <main class="container main-container">
         <div class="time-remaining">
-            <h3>Time Remaining:</h3>
+            <h3>Time Remaining: <span id="time-count"></span></h3>
         </div>
         <div class="question question1">
-            <h2>Which team has won the most league title in the English Premier League?</h2>
+            <h2>Which team has won the most league titles in the English Premier League?</h2>
             <div class="answer a1">
                 <ul>
-                    <li><INPUT TYPE="checkbox" NAME="q1" VALUE="wrong"> A. Chelsea</li>
-                    <li><INPUT TYPE="checkbox" NAME="q2" VALUE="right"> B. Manchester United</li>
-                    <li><INPUT TYPE="checkbox" NAME="q3" VALUE="wrong"> C. Manchester City</li>
-                    <li><INPUT TYPE="checkbox" NAME="q4" VALUE="wrong"> D. Liverpool
+                    <li><INPUT TYPE="checkbox" NAME="q1" class="answers answers1"> A. Chelsea</li>
+                    <li><INPUT TYPE="checkbox" NAME="q2" class="answers answers1" data-correct-answer> B. Manchester
+                        United</li>
+                    <li><INPUT TYPE="checkbox" NAME="q3" class="answers answers1"> C. Manchester City</li>
+                    <li><INPUT TYPE="checkbox" NAME="q4" class="answers answers1"> D. Liverpool
                     <li>
                 </ul>
             </div>
         </div>
-        <div class="question q1">
+        <div class="question question2">
             <h2>Which country has won the most World Cup trophies</h2>
-            <div class="answer a1">
+            <div class="answer a2">
                 <ul>
-                    <li><INPUT TYPE="checkbox" NAME="q1" VALUE="right"> A. Brazil</li>
-                    <li><INPUT TYPE="checkbox" NAME="q2" VALUE="wrong"> B. Germany</li>
-                    <li><INPUT TYPE="checkbox" NAME="q3" VALUE="wrong"> C. France</li>
-                    <li><INPUT TYPE="checkbox" NAME="q4" VALUE="wrong"> D. Argentina
+                    <li><INPUT TYPE="checkbox" NAME="q1" class="answers answers2" data-correct-answer> A. Brazil</li>
+                    <li><INPUT TYPE="checkbox" NAME="q2" class="answers answers2"> B. Germany</li>
+                    <li><INPUT TYPE="checkbox" NAME="q3" class="answers answers2"> C. France</li>
+                    <li><INPUT TYPE="checkbox" NAME="q4" class="answers answers2"> D. Argentina
                     <li>
                 </ul>
             </div>
         </div>
-        <div class="question q1">
+        <div class="question question3">
             <h2>Which player has scored the most goals in the Uefa Champions League?</h2>
-            <div class="answer a1">
+            <div class="answer a3">
                 <ul>
-                    <li><INPUT TYPE="checkbox" NAME="q1" VALUE="wrong"> A. Lionel Messi</li>
-                    <li><INPUT TYPE="checkbox" NAME="q2" VALUE="wrong"> B. Raul</li>
-                    <li><INPUT TYPE="checkbox" NAME="q3" VALUE="wrong"> C. Zlatan Ibrahimovic</li>
-                    <li><INPUT TYPE="checkbox" NAME="q4" VALUE="right"> D. Cristiano Ronaldo
+                    <li><INPUT TYPE="checkbox" NAME="q1" class="answers3"> A. Lionel Messi</li>
+                    <li><INPUT TYPE="checkbox" NAME="q2" class="answers3"> B. Raul</li>
+                    <li><INPUT TYPE="checkbox" NAME="q3" class="answers3"> C. Zlatan Ibrahimovic</li>
+                    <li><INPUT TYPE="checkbox" NAME="q4" class="answers3" data-correct-answer> D. Cristiano Ronaldo
                     <li>
                 </ul>
             </div>

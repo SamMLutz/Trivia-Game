@@ -1,12 +1,41 @@
 .jumbotron {
     text-align: center;
+    padding-bottom: 20px;
+    
 }
 
 ul {
     list-style-type: none;
-    
+    text-align: center;
 }
 
 li {
     display:inline;
 }
+
+h3 {
+    text-align: center; 
+    margin: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+.finish {
+    margin-top: 20px;
+}
+
+.main-container {
+    margin-bottom: 50px;
+}
+
+
+body { 
+        background: url("/Users/SamLutz/bc/Trivia-Game/assets/images/soccer-ball-background.jpg") no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
