@@ -34,10 +34,10 @@ var checkResults = function () {
     // loop answers and check answer.value
     $.each(answers, (index, answer) => {
         if (answer.hasAttribute('data-correct-answer')) {
-            results.push("correct");
+            results.push("correctly");
         }
         else {
-            results.push("incorrect");
+            results.push("incorrectly");
         }
     })
 

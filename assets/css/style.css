@@ -38,7 +38,7 @@ h2 {
 }
 
 body { 
-     background: url("/Users/SamLutz/bc/Trivia-Game/assets/images/soccer-ball-background.jpg") no-repeat center center fixed; 
+     background: url("../images/soccer-ball-background.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
