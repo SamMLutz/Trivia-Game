@@ -1,8 +1,4 @@
-.jumbotron {
-    text-align: center;
-    padding-bottom: 20px;
-    
-}
+
 
 ul {
     list-style-type: none;
@@ -11,6 +7,12 @@ ul {
 
 li {
     display:inline;
+    color: blue;
+}
+
+h1 {
+    text-align: center;
+    color: white;
 }
 
 h3 {
@@ -33,9 +35,19 @@ h2 {
 
 
 body { 
-        background: url("/Users/SamLutz/bc/Trivia-Game/assets/images/soccer-ball-background.jpg") no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-      }
+     background: url("/Users/SamLutz/bc/Trivia-Game/assets/images/soccer-ball-background.jpg") no-repeat center center fixed; 
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+}
+
+p {
+    color: white;
+    text-align: center;
+}
+
+.button {
+    text-align: center;
+    border: 1px solid orange;
+}
