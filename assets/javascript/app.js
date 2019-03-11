@@ -45,29 +45,15 @@ var checkResults = function () {
 }
 //  function to display results to the user
 var displayResults = (results) => {
-    
-        alert("you answered question 1 " + results[0]);
-        alert("you answered question 2 " + results[1]);
-        alert("you answered question 3 " + results[2]);
-    
-    // alert(JSON.stringify(results));
-    
-    
+
+    alert("you answered question 1 " + results[0]);
+    alert("you answered question 2 " + results[1]);
+    alert("you answered question 3 " + results[2]);
 }
-
-// var singleCheckBox = function(answers) {
-//     return $(answers).not(this).prop('checked', false);
-// }
-
-// make only one box clickable per question
-// $('input:checkbox').click(function() {
-//     $('input:checkbox').not(this).prop('checked', false);
-// });
 
 //  click functions to only allow one check for set of answers
 $('.answers1').click(function () {
     $('.answers1').not(this).prop('checked', false);
-    // singleCheckBox($(".answers1")).bind(this);
 });
 
 $('.answers2').click(function () {

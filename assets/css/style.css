@@ -1,4 +1,13 @@
+.jumbotron {
+    text-align: center;
+    padding-bottom: 20px;
+    background: none;
+}
 
+.jumbotron-fluid {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 ul {
     list-style-type: none;
@@ -7,22 +16,16 @@ ul {
 
 li {
     display:inline;
-    color: blue;
-}
-
-h1 {
-    text-align: center;
-    color: white;
 }
 
 h3 {
-    text-align: center; 
     margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h2 {
-    text-align: center;
-    margin: 20px;
+   margin: 20px;
 }
 
 .finish {
@@ -31,23 +34,19 @@ h2 {
 
 .main-container {
     margin-bottom: 50px;
+   
 }
-
 
 body { 
      background: url("/Users/SamLutz/bc/Trivia-Game/assets/images/soccer-ball-background.jpg") no-repeat center center fixed; 
-     -webkit-background-size: cover;
-     -moz-background-size: cover;
-     -o-background-size: cover;
-     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-p {
-    color: white;
+.text {
+    background-color: black;
+    color:red; 
     text-align: center;
-}
-
-.button {
-    text-align: center;
-    border: 1px solid orange;
 }
