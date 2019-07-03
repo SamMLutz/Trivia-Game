@@ -1,8 +1,6 @@
-
-var timeLeft = 30;
+let timeLeft = 30;
 // click function for start to begin timer
 $("#start-button").on("click", function () {
-
     timeLeft = 30;
     var elem = document.getElementById("time-count");
     var timerId = setInterval(countdown, 1000);
@@ -40,12 +38,10 @@ var checkResults = function () {
             results.push("incorrectly");
         }
     })
-
     return results;
 }
 //  function to display results to the user
 var displayResults = (results) => {
-
     alert("you answered question 1 " + results[0]);
     alert("you answered question 2 " + results[1]);
     alert("you answered question 3 " + results[2]);
