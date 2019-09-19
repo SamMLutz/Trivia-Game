@@ -1,5 +1,7 @@
 // click function for start to begin timer
 $("#start-button").on("click", () => {
+    // show main container content on click
+    $(".main-container").show();
     timeLeft = 30;
     const elem = document.getElementById("time-count");
     const timerId = setInterval(countdown, 1000);
