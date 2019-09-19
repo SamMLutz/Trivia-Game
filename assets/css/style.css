@@ -38,7 +38,7 @@ h2 {
 }
 
 body { 
-     background: url("../images/soccer-ball-background.jpg") no-repeat center center fixed; 
+     background: url("../images/soccer-background.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -46,7 +46,13 @@ body {
 }
 
 .text {
-    background-color: black;
-    color:red; 
+    /* background-color: black; */
+    /* color:red;  */
+    color:white; 
     text-align: center;
+}
+
+.overlay {
+    /* min-height: 100vh; */
+    background-color: rgba(0, 0, 0, 0.5)
 }
