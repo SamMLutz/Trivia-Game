@@ -1,43 +1,57 @@
+let timeLeft = 30;
+
+const elem = document.getElementById("time-count");
+
+  // timer function
+//   const countDown2 = timer => {
+//     if (timeLeft == -1) {
+//         clearTimeout(timer);
+//         displayResults(checkResults());
+//         reset()
+//     } else {
+//         elem.innerHTML = timeLeft + ' seconds';
+//         timeLeft -= 1;
+//         console.log("timeLeft: ", timeLeft);
+//     }
+// }
+ 
+
+
 // click function for start to begin timer
 $("#start-button").on("click", () => {
-  
+const timerId = setInterval(countdown, 1000);
+
+ 
+   
     // show main container content on click
     // $(".time-remaining").show();
-    // $(".question1").show();
-    $(".main-container").show();
-    let timeLeft = 30;
-    
-    const elem = document.getElementById("time-count");
-    const timerId = setInterval(countdown, 1000);
+    $(".question1").show();
+    // $(".main-container").show();
+   
     $("input:checkbox").prop('checked', false);
 
-    
-    // timer function
     function countdown() {
         if (timeLeft == -1) {
-            
             clearTimeout(timerId);
-            
             displayResults(checkResults());
             reset()
-        } 
-        
-        else {
+        } else {
             elem.innerHTML = timeLeft + ' seconds';
             timeLeft -= 1;
-           
+            if (timeLeft === 25) {
+                $(".question2").show();
+            }
+            else if (timeLeft === 20) {
+                $(".question3").show();
+            }
             console.log("timeLeft: ", timeLeft);
-           
         }
-      
     }
 
-});
 
-// showQuestions function
-const showQuestions = () => {
 
-}
+
+
 
 // reset function for when timer runs out
 const reset = () => $("#time-count").empty();
@@ -85,4 +99,6 @@ $('.finish').click(function () {
     timeLeft = 0;
     countdown() = false;
     displayResults(checkResults());
+});
+
 });

@@ -61,17 +61,17 @@ body {
     color: black;
 }
 
-.main-container {
+/* .main-container {
     display: none;
-}
+} */
 
 /* .time-remaining {
     display: none;
-}
+} */
 
 .question1, .question2, .question3 {
     display: none;
-} */
+}
 
 footer {
     position: fixed;
