@@ -101,7 +101,8 @@ $('.answers3').click(function () {
 $('.finish').click(function () {
     timeLeft = 0;
     countdown() = false;
-    displayResults(checkResults());
+    
+    // displayResults(checkResults());
 });
 
 });
