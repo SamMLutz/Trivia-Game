@@ -25,7 +25,7 @@ const timerId = setInterval(countdown, 1000);
    
     // show main container content on click
     // $(".time-remaining").show();
-    $(".question1").show();
+    // $(".question1").show();
     // $(".main-container").show();
    
     $("input:checkbox").prop('checked', false);
@@ -36,6 +36,8 @@ const timerId = setInterval(countdown, 1000);
             displayResults(checkResults());
             reset()
         } else {
+            $(".time-remaining").show();
+            $(".question1").show();
             elem.innerHTML = timeLeft + ' seconds';
             timeLeft -= 1;
             if (timeLeft === 25) {
@@ -43,6 +45,7 @@ const timerId = setInterval(countdown, 1000);
             }
             else if (timeLeft === 20) {
                 $(".question3").show();
+                $(".finish").show();
             }
             console.log("timeLeft: ", timeLeft);
         }
