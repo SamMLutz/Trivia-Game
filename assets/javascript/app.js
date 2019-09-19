@@ -1,24 +1,43 @@
 // click function for start to begin timer
 $("#start-button").on("click", () => {
+  
     // show main container content on click
+    // $(".time-remaining").show();
+    // $(".question1").show();
     $(".main-container").show();
-    timeLeft = 30;
+    let timeLeft = 30;
+    
     const elem = document.getElementById("time-count");
     const timerId = setInterval(countdown, 1000);
     $("input:checkbox").prop('checked', false);
 
+    
     // timer function
     function countdown() {
         if (timeLeft == -1) {
+            
             clearTimeout(timerId);
+            
             displayResults(checkResults());
             reset()
-        } else {
+        } 
+        
+        else {
             elem.innerHTML = timeLeft + ' seconds';
-            timeLeft--;
+            timeLeft -= 1;
+           
+            console.log("timeLeft: ", timeLeft);
+           
         }
+      
     }
+
 });
+
+// showQuestions function
+const showQuestions = () => {
+
+}
 
 // reset function for when timer runs out
 const reset = () => $("#time-count").empty();
