@@ -2,21 +2,6 @@ let timeLeft = 30;
 
 const elem = document.getElementById("time-count");
 
-  // timer function
-//   const countDown2 = timer => {
-//     if (timeLeft == -1) {
-//         clearTimeout(timer);
-//         displayResults(checkResults());
-//         reset()
-//     } else {
-//         elem.innerHTML = timeLeft + ' seconds';
-//         timeLeft -= 1;
-//         console.log("timeLeft: ", timeLeft);
-//     }
-// }
- 
-
-
 // click function for start to begin timer
 $("#start-button").on("click", () => {
 const timerId = setInterval(countdown, 1000);
@@ -62,26 +47,32 @@ const reset = () => $("#time-count").empty();
 // function to gather checked results and return correct or incorrect
 const checkResults = () => {
     const answers = $("input:checked");
-    console.log(answers);
+    console.log(answers[0].value);
+    
     const results = [];
-
+    const chosenAnswers = [];
     // loop answers and check answer.value
     $.each(answers, (index, answer) => {
         if (answer.hasAttribute('data-correct-answer')) {
             results.push("correctly");
+            // console.log("answers: ", JSON.stringify(answers))
+            console.log("correct answer: ", answer.value)
+            // correctAnswers.push(answer.value)
+            chosenAnswers.push(answer.value)
         }
         else {
             results.push("incorrectly");
+            chosenAnswers.push(answer.value)
         }
     })
-    return results;
+    return [results, chosenAnswers];
 }
 
 //  function to display results to the user
-const displayResults = (results) => {
-    alert("you answered question 1 " + results[0]);
-    alert("you answered question 2 " + results[1]);
-    alert("you answered question 3 " + results[2]);
+const displayResults = (results, answers) => {
+    alert("you answered question 1 " + results[0][0]);
+    alert("you answered question 2 " + results[1][1]);
+    alert("you answered question 3 " + results[2][2]);
 }
 
 //  click functions to only allow one check for set of answers
