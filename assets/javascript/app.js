@@ -38,9 +38,6 @@ const timerId = setInterval(countdown, 1000);
 
 
 
-
-
-
 // reset function for when timer runs out
 const reset = () => $("#time-count").empty();
 
@@ -70,9 +67,18 @@ const checkResults = () => {
 
 //  function to display results to the user
 const displayResults = (results, answers) => {
+    // console.log(("results[0]: ", results[0]))
     alert("you answered question 1 " + results[0][0]);
-    alert("you answered question 2 " + results[1][1]);
-    alert("you answered question 3 " + results[2][2]);
+    alert("you answered question 2 " + results[0][1]);
+    alert("you answered question 3 " + results[0][2]);
+
+    if (results[0].includes("incorrectly")) {
+        alert("try again to obtain the perfect score!")
+    }
+    else {
+        alert("You answered every question correctly for a perfect score! Great job!")
+    }
+    location.reload()
 }
 
 //  click functions to only allow one check for set of answers
@@ -92,8 +98,6 @@ $('.answers3').click(function () {
 $('.finish').click(function () {
     timeLeft = 0;
     countdown() = false;
-    
-    // displayResults(checkResults());
 });
 
 });
